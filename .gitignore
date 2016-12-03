@@ -1,0 +1,20 @@
+class Person{
+	name:string;
+	age:number;
+	tell(){
+		retun this.name+":"+this.age;
+	}
+}
+
+class Student extends Person{
+	school:string;
+	tell(){
+		return this.name+":"+this.age+":"+this.school;
+	}
+}
+var s=new Student();
+s.name="哇哈哈"；
+s.age="110";
+s.school="吉林建筑大学"；
+alert(s.tell());
+ 
